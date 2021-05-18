@@ -1,4 +1,7 @@
-# # 근사 알고리즘 (Approximation Algorithms)
+
+
+
+# 근사 알고리즘 (Approximation Algorithms)
 
 ​    
 
@@ -48,7 +51,7 @@
 
 > - 작업 스케줄링(Job Scheduling)
 >
->    -n개의작업,각작업의 수행 시간 ti, i =1, 2, 3, ⋯,n, 
+>   -n개의작업,각작업의 수행 시간 ti, i =1, 2, 3, ⋯,n, 
 >
 >   -그리고m개의동일한 기계가 주어질 때, 
 >
@@ -77,13 +80,13 @@
 
 > ```
 > public static void main(String[] args) {
->             int n = 8;
->             int m = 16;
+>             int n = 4;
+>             int m = 2;
 >             int[] t = new int[n];
 >             Random random = new Random();
 >             System.out.print("작업 시간 : ");
 >             for (int i = 0; i < n; i++) {
->                 t[i] = random.nextInt(30) + 1;
+>                 t[i] = random.nextInt(10) + 1;
 >                 System.out.printf("%d ", t[i]);
 >             }
 >             System.out.println();
@@ -119,15 +122,11 @@
 
 # 결과
 
-> n={8,10,12,14,16}, m은 16으로 고정 t는 1~30 사이의 랜덤 값
+> n={4, 8, 16}, m은 2으로 고정 t는 1~10 사이의 랜덤 값
+>
+> n=4![결과1](https://user-images.githubusercontent.com/80369791/118600070-6daa3180-b7eb-11eb-9d84-efc8a48dbb28.PNG)
 >
 > n=8 ![결과 8](https://user-images.githubusercontent.com/80369791/118578592-6113e200-b7c7-11eb-95d4-65f51b10e251.PNG)
->
-> n=10![결과 10](https://user-images.githubusercontent.com/80369791/118578593-6113e200-b7c7-11eb-92bc-267a628c48af.PNG)
->
-> n=12![결과 12](https://user-images.githubusercontent.com/80369791/118578594-61ac7880-b7c7-11eb-9700-3d372631c788.PNG)
->
-> n=14![결과 14](https://user-images.githubusercontent.com/80369791/118578595-61ac7880-b7c7-11eb-94f8-616611f32c12.PNG)
 >
 > n=16![결과 16](https://user-images.githubusercontent.com/80369791/118578590-5fe2b500-b7c7-11eb-87e0-ecdadb48faa0.PNG)
 
